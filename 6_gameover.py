@@ -12,6 +12,14 @@ import pygame
 
 pygame.init() # 초기화 (반드시 필요)
 
+# 오디오 시스템 초기화
+pygame.mixer.init()
+
+# 배경음악 파일 로드
+sound = pygame.mixer.Sound("/Users/jae/Desktop/wonjae/pygame_project/background_music.mp3")
+sound.set_volume(0.5)
+sound.play()
+
 
 # 화면 크기 설정
 screen_width = 640  # 가로 크기
@@ -62,7 +70,7 @@ weapon_width = weapon_size[0]
 weapons = []
 
 # 무기 이동 속도
-weapon_speed = 10
+weapon_speed = 15
 
 # 공 만들가 (4개 크기에 대해 따로 처리)
 ball_images = [
