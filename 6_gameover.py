@@ -16,7 +16,7 @@ pygame.init() # 초기화 (반드시 필요)
 pygame.mixer.init()
 
 # 배경음악 파일 로드
-sound = pygame.mixer.Sound("/Users/jae/Desktop/wonjae/pygame_project/background_music.mp3")
+sound = pygame.mixer.Sound("sound_files/background_music.mp3")
 sound.set_volume(0.5)
 sound.play()
 
