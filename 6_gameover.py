@@ -303,6 +303,6 @@ screen.blit(msg, msg_rect)
 pygame.display.update()
 
 # 2초 대기
-pygame.time.delay(2000)
+pygame.time.delay(3000)
 
 pygame.quit()
